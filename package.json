@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Servidor para aplicação AgendAi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusAx/ServidorAgendAi.git"
+  },
+  "keywords": [
+    "Node",
+    "JS",
+    "MySQL",
+    "CORS",
+    "Express"
+  ],
+  "author": "MatheusAx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusAx/ServidorAgendAi/issues"
+  },
+  "homepage": "https://github.com/MatheusAx/ServidorAgendAi#readme"
+}
