@@ -75,4 +75,4 @@ app.get("/servico/listar", cors(configCors), (req, res) =>{
 });
 
 
-app.listen(5521, () => console.log("Servidor ondeline na porta 5521"));
+app.listen(5521, () => console.log("Servidor online na porta 5521"));
