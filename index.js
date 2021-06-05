@@ -16,7 +16,7 @@ const cx = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "AgendAi",
+    database: "agendai",
     port: "3306",
 });
 
@@ -45,7 +45,7 @@ app.post("/usuario/cadastro", cors(configCors), (req, res) =>{
 
 
 
-//Rotas para cadastrar serviços
+//Rota para cadastrar serviço
 
 
 
