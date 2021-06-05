@@ -75,4 +75,22 @@ app.get("/servico/listar", cors(configCors), (req, res) =>{
 });
 
 
+// rota para conferencia de dados
+app.get("/servico/conferir", cors(configCors), (req, res) =>{
+    cx.query("select u.*,s.* from usuario u inner join servico s on u.idusuario=s.idusuario",[req.body],(erro,result) => {
+        if (erro) {
+            res.status(400).send({ output: `Não foi possivel listar -> ${erro}` });
+            return;
+        }
+        res.status(201).send({output: result });
+    })
+});
+// select u.*,s.* from usuario u inner join servico s on u.idusuario=s.idusuario
+
+
+
+
+
+
+
 app.listen(5521, () => console.log("Servidor online na porta 5521"));
